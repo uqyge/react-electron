@@ -1,8 +1,8 @@
 {
-  "name": "react-electron",
-  "version": "0.1.0",
-  "description": "Simple boilerplate for developing an Electron app with React",
-  "author": "willjw3",
+  "name": "magic-deck",
+  "version": "0.2.0",
+  "description": "magic deck written with electron",
+  "author": "Intelligent 3D",
   "build": {
     "appId": "react.electron",
     "win": {
