@@ -1,6 +1,15 @@
 const { app, BrowserWindow } = require("electron");
 const path = require("path");
 const isDev = require("electron-is-dev");
+var exec = require("child_process").execFile;
+
+function serverRun() {
+  console.log("fun() start");
+  exec("app.exe", function (err, data) {
+    console.log(err);
+    console.log(data.toString());
+  });
+}
 
 function createWindow() {
   // Create the browser window.
@@ -26,6 +35,7 @@ function createWindow() {
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.whenReady().then(() => {
+  serverRun();
   createWindow();
 
   app.on("activate", function () {
