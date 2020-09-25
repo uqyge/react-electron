@@ -6,8 +6,15 @@
   "build": {
     "appId": "react.electron",
     "win": {
+      "target": [
+        "nsis"
+      ],
       "icon": "build/icon.png"
-    }
+    },
+    "extraFiles": [
+      "./flask/app.py",
+      "./flask/app.exe"
+    ]
   },
   "main": "public/electron.js",
   "homepage": "./",
